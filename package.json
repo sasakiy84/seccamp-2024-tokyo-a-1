@@ -1,0 +1,21 @@
+{
+  "name": "seccamp2024-tokyo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "honkit serve --port 5000",
+    "build": "honkit build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@honkit/honkit-plugin-ga": "^1.0.1",
+    "gitbook-plugin-anchors": "^0.7.1",
+    "gitbook-plugin-hide-published-with": "^0.0.1",
+    "gitbook-plugin-hints": "^1.0.2",
+    "gitbook-plugin-navigator": "^1.1.1",
+    "honkit": "^5.1.4"
+  }
+}

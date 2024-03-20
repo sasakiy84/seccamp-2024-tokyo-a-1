@@ -1,0 +1,24 @@
+{
+    "root": "./docs/",
+    "title": "利用者視点と開発者視点から理解するウェブサイトの安全性 -セキュリティ・ミニキャンプ in 東京 2024-",
+    "structure": {
+        "readme": "introduction.md",
+        "summary": "_SUMMARY.md"
+    },
+    "styles": {
+        "website": "styles/custom.css"
+    },
+    "plugins": [
+        "navigator",
+        "hide-published-with",
+        "anchors",
+        "hints",
+        "@honkit/honkit-plugin-ga"
+    ],
+    "pluginsConfig": {
+        "ga": {
+            "trackingID": "",
+            "anonymizeIP": true
+        }
+    }
+}
