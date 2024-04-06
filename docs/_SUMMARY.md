@@ -1,4 +1,8 @@
 - [はじめに](introduction.md)
+- [事前課題](pre/index.md)
+  - [環境構築](pre/environment-setting.md)
+  - [HTTP による通信を触ってみる](pre/http.md)
+  - [GitHub Pages でページをデプロイしてみる](pre/github-pages.md)
 - [利用者として、ウェブサイトの利用を正しく怖がろう](aim1/index.md)
   - [ウェブページ閲覧で生じる可能性のある危険](aim1/vuln-overview.md)
   - [具体例としての CSRF の説明](aim1/csrf-overview.md)
