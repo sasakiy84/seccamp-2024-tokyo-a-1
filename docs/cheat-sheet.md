@@ -167,3 +167,5 @@ npm i sasakiy84/dangerous-npm-repository-test
   1. https://docs.npmjs.com/cli/v10/using-npm/scripts
 4. 実際の npm のライフサイクルスクリプトを使った攻撃事例
   1. https://www.bleepingcomputer.com/news/security/researcher-hacks-over-35-tech-firms-in-novel-supply-chain-attack/
+5. xz のバックドア
+   1. https://boehs.org/node/everything-i-know-about-the-xz-backdoor
