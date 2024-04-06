@@ -1,0 +1,581 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <title>環境構築 · 利用者視点と開発者視点から理解するウェブサイトの安全性 -セキュリティ・ミニキャンプ in 東京 2024-</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 5.1.4">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-navigator/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-hints/plugin-hints.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="http.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    はじめに
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    事前課題
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.2.1" data-path="environment-setting.html">
+            
+                <a href="environment-setting.html">
+            
+                    
+                    環境構築
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="http.html">
+            
+                <a href="http.html">
+            
+                    
+                    HTTP による通信を触ってみる
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="github-pages.html">
+            
+                <a href="github-pages.html">
+            
+                    
+                    GitHub Pages でページをデプロイしてみる
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../aim1/">
+            
+                <a href="../aim1/">
+            
+                    
+                    利用者として、ウェブサイトの利用を正しく怖がろう
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../aim1/vuln-overview.html">
+            
+                <a href="../aim1/vuln-overview.html">
+            
+                    
+                    ウェブページ閲覧で生じる可能性のある危険
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../aim1/csrf-overview.html">
+            
+                <a href="../aim1/csrf-overview.html">
+            
+                    
+                    具体例としての CSRF の説明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../aim1/hands-on1.html">
+            
+                <a href="../aim1/hands-on1.html">
+            
+                    
+                    ハンズオン1
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    開発者として、ウェブサイトの開発にあたって適切な対策をしよう
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" >
+            
+                <span>
+            
+                    
+                    ブラウザという登場人物
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" >
+            
+                <span>
+            
+                    
+                    ハンズオン2
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" >
+            
+                <span>
+            
+                    
+                    フレームワークという登場人物
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" >
+            
+                <span>
+            
+                    
+                    中間総括
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" >
+            
+                <span>
+            
+                    
+                    サプライチェーンに潜む危険性
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" >
+            
+                <span>
+            
+                    
+                    ハンズオン3
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    まとめ
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../cheat-sheet.html">
+            
+                <a href="../cheat-sheet.html">
+            
+                    
+                    チートシート
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >環境構築</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <html><head></head><body><h1 id="環境構築"><a name="環境構築" class="plugin-anchor" href="#環境構築"><i class="fa fa-link" aria-hidden="true"></i></a>環境構築</h1>
+<h2 id="telnet___curl_を使えるようにする"><a name="telnet___curl_を使えるようにする" class="plugin-anchor" href="#telnet___curl_を使えるようにする"><i class="fa fa-link" aria-hidden="true"></i></a>1. telnet / curl を使えるようにする</h2>
+<p>事前学習で telnet / curl というコマンドを使います。</p>
+<h3 id="Mac___Linux"><a name="Mac___Linux" class="plugin-anchor" href="#Mac___Linux"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. Mac / Linux</h3>
+<p>ターミナルツールを開き、以下のコマンドを打ってください。</p>
+<pre><code>telnet
+</code></pre><p>エラーが出ず、telnet の待機モードに入れば問題ありません。<code>q</code>を入力し、待機モードから抜けてください。</p>
+<p>以降は、<code>command not found</code> などのエラーが出て、telent がインストールされていなかった人向けです。
+もし telnet がインストールされていなかった場合は、パッケージマネージャーを使ってインストールする必要があります。
+Mac の場合は、</p>
+<pre><code>brew install telnet
+</code></pre><p>でインストール可能です。
+Linux の場合は、お使いのディストリビューションのパッケージマネージャーでインストールしてください。</p>
+<p>また、同じような手順で curl コマンドをインストールしてください。
+動作確認は、<code>curl --version</code>で可能です。</p>
+<h3 id="Windows"><a name="Windows" class="plugin-anchor" href="#Windows"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. Windows</h3>
+<p>node をインストールすることも考えて、Windows Subsystem for Linux(WSL) を使います。
+WSL とは、 Windows のうえで Linux を動かすツールです。
+<a href="https://learn.microsoft.com/ja-jp/windows/wsl/install" target="_blank">WSL のインストール | Microsoft Learn</a>を参考にインストールしてください。
+ディストリビューションの指定は特にありません。</p>
+<p>WSL のセットアップを行い、Linux にログインできたら、以下のコマンドを打ってください。</p>
+<pre><code>telnet
+</code></pre><p>エラーが出ず、telnet の待機モードに入れば問題ありません。<code>q</code>を入力し、待機モードから抜けてください。</p>
+<p>Ubuntu 以外のディストリビューションをインストールし、そのディストリビューションに telnet が含まれていなかった場合は、適切なパッケージマネージャーを用いてインストールしてください。</p>
+<p>また、同じような手順で curl コマンドをインストールしてください。
+動作確認は、<code>curl --version</code>で可能です。</p>
+<h2 id="node_を使えるようにする"><a name="node_を使えるようにする" class="plugin-anchor" href="#node_を使えるようにする"><i class="fa fa-link" aria-hidden="true"></i></a>2. node を使えるようにする</h2>
+<p>JavaScript の実行環境である Node.js をインストールし、<code>node</code>コマンドをつかえるようにします。
+最終的に、<code>node -v</code>コマンドを打ってバージョンが確認できれば良いので、既に何らかの方法でインストールしてある人は読み飛ばして構いません。</p>
+<p>まだインストールしていない人は、このドキュメントでは Volta というツールを使ってインストールします。
+Volta は node のバージョン管理ツールで、node 自体のバージョン切り替えを容易にしてくれます。
+ただし、node のバージョン管理ツールは他にもあるため、それらを使っても構いません。</p>
+<h3 id="Mac___Linux"><a name="Mac___Linux" class="plugin-anchor" href="#Mac___Linux"><i class="fa fa-link" aria-hidden="true"></i></a>2.1. Mac / Linux</h3>
+<p>以下のコマンドを実行してください。</p>
+<pre><code class="lang-sh">curl https://get.volta.sh | bash
+</code></pre>
+<p>実行が終わったら、以下のコマンドを実行して、バージョンが出力されることを確認してください。</p>
+<pre><code class="lang-sh">volta -v
+</code></pre>
+<p>バージョンが出力されたら、以下のコマンドを実行して node をインストールしてください。</p>
+<pre><code>volta install node
+</code></pre><h3 id="Windows"><a name="Windows" class="plugin-anchor" href="#Windows"><i class="fa fa-link" aria-hidden="true"></i></a>2.2. Windows</h3>
+<p>Volta は Windows 環境でも動作します。
+そのため、Windows 環境で完結させたい人はそれで構いません。</p>
+<p>しかし、一応環境をそろえておきたいという講師側の都合と、今後開発していく上での WSL の便利さを考慮して、このドキュメントでは WSL を利用した環境構築を推奨します。</p>
+<p>telnet の項にある WSL のセットアップが終わっていない人は、そちらを先に行ってください。
+WSL のセットアップができ、Linux のコンソール画面に入ったら、以下の操作を進めてください。（Mac / Linux と同じ手順です）</p>
+<p>以下のコマンドを実行してください。</p>
+<pre><code class="lang-sh">curl https://get.volta.sh | bash
+</code></pre>
+<p>実行が終わったら、以下のコマンドを実行して、バージョンが出力されることを確認してください。</p>
+<pre><code class="lang-sh">volta -v
+</code></pre>
+<p>バージョンが出力されたら、以下のコマンドを実行して node をインストールしてください。</p>
+<pre><code>volta install node
+</code></pre><p>以下のコマンドで、node のバージョンが出力されることを確認してください。</p>
+<pre><code>node -v
+</code></pre><h2 id="リポジトリの_clone"><a name="リポジトリの_clone" class="plugin-anchor" href="#リポジトリの_clone"><i class="fa fa-link" aria-hidden="true"></i></a>3. リポジトリの clone</h2>
+<p>サンプルアプリとして、nodejs を用いたものを用意しました。
+nodejs を使用したことがあれば理解度が上がるとは思いますが、必要な箇所にコメントをつけるので、使用経験がなくても CSRF を理解する妨げにはならないと思います。</p>
+<p>以下のリポジトリを clone してください
+<a href="https://github.com/sasakiy84/csrf-demo" target="_blank">https://github.com/sasakiy84/csrf-demo</a></p>
+<p>その後、readme に従ってアプリを起動してください。nodejs か docker-compose の実行環境が必要です。
+本を読み進めていくと、localhost へのリンクが出てくると思います。これは、サンプルアプリへのリンクを示しています。ポート 3000 番のリンクが本物のアプリで、ポート 4000 番のリンクが攻撃者が作成したアプリのものだと思ってください。</p>
+<div id="anchors-navbar"><i class="fa fa-anchor"></i><ul><p><a href="#環境構築">環境構築</a></p><li><a href="#telnet___curl_を使えるようにする">1. telnet / curl を使えるようにする</a></li><ul><li><a href="#Mac___Linux">1.1. Mac / Linux</a></li><li><a href="#Windows">1.2. Windows</a></li></ul><li><a href="#node_を使えるようにする">2. node を使えるようにする</a></li><ul><li><a href="#Mac___Linux">2.1. Mac / Linux</a></li><li><a href="#Windows">2.2. Windows</a></li></ul><li><a href="#リポジトリの_clone">3. リポジトリの clone</a></li></ul></div><a href="#telnet___curl_を使えるようにする" id="goTop"><i class="fa fa-arrow-up"></i></a></body></html>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 事前課題">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="http.html" class="navigation navigation-next " aria-label="Next page: HTTP による通信を触ってみる">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"環境構築","level":"1.2.1","depth":2,"next":{"title":"HTTP による通信を触ってみる","level":"1.2.2","depth":2,"path":"pre/http.md","ref":"pre/http.md","articles":[]},"previous":{"title":"事前課題","level":"1.2","depth":1,"path":"pre/index.md","ref":"pre/index.md","articles":[{"title":"環境構築","level":"1.2.1","depth":2,"path":"pre/environment-setting.md","ref":"pre/environment-setting.md","articles":[]},{"title":"HTTP による通信を触ってみる","level":"1.2.2","depth":2,"path":"pre/http.md","ref":"pre/http.md","articles":[]},{"title":"GitHub Pages でページをデプロイしてみる","level":"1.2.3","depth":2,"path":"pre/github-pages.md","ref":"pre/github-pages.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["navigator","hide-published-with","anchors","hints","@honkit/honkit-plugin-ga"],"root":"./docs/","styles":{"website":"styles/custom.css"},"pluginsConfig":{"search":{},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"@honkit/honkit-plugin-ga":{},"navigator":{},"ga":{"trackingID":"","anonymizeIP":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"introduction.md","glossary":"GLOSSARY.md","summary":"_SUMMARY.md"},"variables":{},"title":"利用者視点と開発者視点から理解するウェブサイトの安全性 -セキュリティ・ミニキャンプ in 東京 2024-","gitbook":"*"},"file":{"path":"pre/environment-setting.md","mtime":"2024-04-06T15:16:01.949Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-04-06T15:16:09.054Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-published-with/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

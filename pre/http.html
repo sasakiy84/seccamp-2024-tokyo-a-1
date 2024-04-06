@@ -1,0 +1,622 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <title>HTTP による通信を触ってみる · 利用者視点と開発者視点から理解するウェブサイトの安全性 -セキュリティ・ミニキャンプ in 東京 2024-</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 5.1.4">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-navigator/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-hints/plugin-hints.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="github-pages.html" />
+    
+    
+    <link rel="prev" href="environment-setting.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    はじめに
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    事前課題
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="environment-setting.html">
+            
+                <a href="environment-setting.html">
+            
+                    
+                    環境構築
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.2" data-path="http.html">
+            
+                <a href="http.html">
+            
+                    
+                    HTTP による通信を触ってみる
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="github-pages.html">
+            
+                <a href="github-pages.html">
+            
+                    
+                    GitHub Pages でページをデプロイしてみる
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../aim1/">
+            
+                <a href="../aim1/">
+            
+                    
+                    利用者として、ウェブサイトの利用を正しく怖がろう
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../aim1/vuln-overview.html">
+            
+                <a href="../aim1/vuln-overview.html">
+            
+                    
+                    ウェブページ閲覧で生じる可能性のある危険
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../aim1/csrf-overview.html">
+            
+                <a href="../aim1/csrf-overview.html">
+            
+                    
+                    具体例としての CSRF の説明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../aim1/hands-on1.html">
+            
+                <a href="../aim1/hands-on1.html">
+            
+                    
+                    ハンズオン1
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    開発者として、ウェブサイトの開発にあたって適切な対策をしよう
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" >
+            
+                <span>
+            
+                    
+                    ブラウザという登場人物
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" >
+            
+                <span>
+            
+                    
+                    ハンズオン2
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" >
+            
+                <span>
+            
+                    
+                    フレームワークという登場人物
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" >
+            
+                <span>
+            
+                    
+                    中間総括
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" >
+            
+                <span>
+            
+                    
+                    サプライチェーンに潜む危険性
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" >
+            
+                <span>
+            
+                    
+                    ハンズオン3
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    まとめ
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../cheat-sheet.html">
+            
+                <a href="../cheat-sheet.html">
+            
+                    
+                    チートシート
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >HTTP による通信を触ってみる</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <html><head></head><body><h1 id="HTTP_による通信を触ってみる"><a name="HTTP_による通信を触ってみる" class="plugin-anchor" href="#HTTP_による通信を触ってみる"><i class="fa fa-link" aria-hidden="true"></i></a>HTTP による通信を触ってみる</h1>
+<h2 id="HTTP_とは"><a name="HTTP_とは" class="plugin-anchor" href="#HTTP_とは"><i class="fa fa-link" aria-hidden="true"></i></a>1. HTTP とは</h2>
+<p>HTTP(Hypertext Transfer Protocol) は、サーバーとクライアントが通信するためのプロトコルです。
+クライアントとは、主に Chrome, Firefox, Safari, Edge などのウェブブラウザのことを指します。
+サーバーとは、コンテンツを供給するもの（server）で、HTTP 通信を受け入れるコンピューターのことを指します。
+プロトコルとは、やりとりの方法を定めたルール集のことです。たとえば、「通信の一単語目には、別に定められた特定の単語しか使ってはいけない」などです。</p>
+<p>まとめると、HTTP とは、「コンテンツを供給するもの（server）で、HTTP 通信を受け入れるコンピューターであるサーバーと、主に Chrome, Firefox, Safari, Edge などのウェブブラウザなどのクライアントが通信するための、やりとりの方法を定めたルール集」です。</p>
+<p>私たちが普段 Web (World Wide Web) と呼んでいるものは、この HTTP を使ってリソースのやり取りをしていることが多いです。</p>
+<h2 id="コマンドラインでウェブサイトを取得してみよう"><a name="コマンドラインでウェブサイトを取得してみよう" class="plugin-anchor" href="#コマンドラインでウェブサイトを取得してみよう"><i class="fa fa-link" aria-hidden="true"></i></a>2. コマンドラインでウェブサイトを取得してみよう</h2>
+<p>curl コマンドを使ってウェブサイトを取得してみます。
+以下のコマンドを打ってみてください。</p>
+<pre><code class="lang-sh">curl http://example.com
+</code></pre>
+<p>すると、<code>&lt;!doctype html&gt;</code>から始まる結果が HTML 文書が出力されたと思います。
+これは、curl コマンドを使って、<a href="http://example.com" target="_blank">http://example.com</a> という URL にリクエストを送り、その結果として HTML 文書を得ています。
+実際にブラウザで <a href="http://example.com" target="_blank">http://example.com</a> にアクセスしたときの画面と見比べてみると、<code>This domain is for use in illustrative examples in documents.</code>などの同じ文字列が見つかると思います。</p>
+<p>もう少し詳しく見てみましょう。
+curl には、verbose オプション（<code>-v</code>）があります。</p>
+<pre><code class="lang-sh">curl -v http://example.com
+</code></pre>
+<p>すると、HTML の出力の前に、以下のような文字列が出力されたと思います。</p>
+<pre><code>*   Trying 93.184.216.34:80...
+* Connected to example.com (93.184.216.34) port 80 (#0)
+&gt; GET / HTTP/1.1
+&gt; Host: example.com
+&gt; User-Agent: curl/7.81.0
+&gt; Accept: */*
+&gt;
+* Mark bundle as not supporting multiuse
+&lt; HTTP/1.1 200 OK
+&lt; Accept-Ranges: bytes
+&lt; Age: 7831
+&lt; Cache-Control: max-age=604800
+&lt; Content-Type: text/html; charset=UTF-8
+&lt; Date: Mon, 01 Apr 2024 12:11:11 GMT
+&lt; Etag: &quot;3147526947&quot;
+&lt; Expires: Mon, 08 Apr 2024 12:11:11 GMT
+&lt; Last-Modified: Thu, 17 Oct 2019 07:18:26 GMT
+&lt; Server: ECS (sed/5889)
+&lt; Vary: Accept-Encoding
+&lt; X-Cache: HIT
+&lt; Content-Length: 1256
+&lt;
+</code></pre><p>このうち、<code>&gt;</code>が行頭についている行は、手元の端末からサーバーに送られた HTTP リクエストの一部です。
+<code>&lt;</code>が行頭にある行は、サーバーから送られてきた HTTP レスポンスの一部です。</p>
+<p>HTTP メッセージの読み方は、<a href="https://developer.mozilla.org/ja/docs/Web/HTTP/Overview#http_%E3%83%A1%E3%83%83%E3%82%BB%E3%83%BC%E3%82%B8" target="_blank">HTTP メッセージ | MDN</a>を参考にしてください。</p>
+<p>さしあたり、以下の三点をわかっておいてほしいです。</p>
+<ul>
+<li>HTTP メッセージは書き方が決められている</li>
+<li>HTTP リクエストには、メソッドと呼ばれる部分がある</li>
+<li>HTTP リクエストとレスポンスには、ヘッダーと呼ばれる部分がある</li>
+</ul>
+<h2 id="HTTP_をしゃべってみよう"><a name="HTTP_をしゃべってみよう" class="plugin-anchor" href="#HTTP_をしゃべってみよう"><i class="fa fa-link" aria-hidden="true"></i></a>3. HTTP をしゃべってみよう</h2>
+<p>telnet を使って、HTTP をしゃべってみます。
+ターミナルを開き、以下のように入力してください。</p>
+<pre><code class="lang-sh">$ telnet example.com 80
+</code></pre>
+<p>すると、telnet の対話モードに入ります。
+以下の HTTP リクエストをコピーしてはりつけてみるか、手で入力してみてください。</p>
+<pre><code class="lang-http"><span class="hljs-keyword">GET</span> <span class="hljs-string">/</span> <span class="hljs-meta">HTTP/1.1</span>
+<span class="hljs-attribute">Host</span><span class="hljs-punctuation">: </span>example.com
+<span class="hljs-attribute">User-Agent</span><span class="hljs-punctuation">: </span>curl/7.81.0
+<span class="hljs-attribute">Accept</span><span class="hljs-punctuation">: </span>*/*
+</code></pre>
+<p>そして、改行を二回入力すると、HTML レスポンスが返ってくると思います。</p>
+<h2 id="ブラウザが送っているリクエストを見てみよう"><a name="ブラウザが送っているリクエストを見てみよう" class="plugin-anchor" href="#ブラウザが送っているリクエストを見てみよう"><i class="fa fa-link" aria-hidden="true"></i></a>4. ブラウザが送っているリクエストを見てみよう</h2>
+<p>ブラウザには検証画面と呼ばれる、内部の挙動をある程度まで確認できるツールがあります。
+検証画面を使って、ブラウザがどのようにウェブサイトのデータを取得しているのかを見てみましょう。</p>
+<p>以降では、Google Chrome を想定して話を進めますが、他の主要なブラウザでも同じことはできます。
+お使いのブラウザの検証画面の見方は、各自で調べてください。</p>
+<h3 id="検証画面を開く"><a name="検証画面を開く" class="plugin-anchor" href="#検証画面を開く"><i class="fa fa-link" aria-hidden="true"></i></a>4.1. 検証画面を開く</h3>
+<p>ブラウザ上で右クリックするとポップアップでメニューが開きます。
+その中から、「検証」という画面を選んでください。
+<img src="img/http/open-devtools-chrome.png" alt="alt text"></p>
+<p>すると、以下のような画面が開きます。上側に、Element, Sources, Console などの文字が表示されていれば大丈夫です。設定次第で、英語以外の項目名で表示されているかもしれません。
+<img src="img/http/devtool-chrome.png" alt="alt text"></p>
+<h3 id="検証画面でリクエストを見る"><a name="検証画面でリクエストを見る" class="plugin-anchor" href="#検証画面でリクエストを見る"><i class="fa fa-link" aria-hidden="true"></i></a>4.2. 検証画面でリクエストを見る</h3>
+<p>検証画面を開いているタブの URL バーに、次の URL を入力して、エンターキーを押してください。</p>
+<p><a href="https://example.com/" target="_blank">https://example.com/</a></p>
+<p>その後、検証画面のネットワークタブを選択してください。
+すると、以下のような画面になっていると思います。</p>
+<p><img src="img/http/example-network-devtool.png" alt="alt text"></p>
+<p>中段あたりに表示されている項目が、一つ一つの HTTP リクエストを表します。
+表示された項目の中の、 Name が example.com、 Type が document となっている列をクリックしてください。
+すると詳細画面が開き、Headers のタブでどのようなヘッダーが送られ、どのようなヘッダーが返されているかが確認できます。</p>
+<p><img src="img/http/headers.png" alt="alt text"></p>
+<p>curl や telnet で送ったリクエストに含まれていたヘッダーと見比べて、同じものや異なるものを見つけてみましょう。</p>
+<p>Raw option が表示されている人は、それを有効にすると、普通のテキスト形式でリクエスト・レスポンスを確認できます。
+ただ、手元で確認したときに、同じ Chrome のバージョンでも表示される場合とされない場合がありました。出現条件が分かっていないので、知っている人がいたら教えてください。
+<img src="img/http/raw-option.png" alt="alt text"></p>
+<h2 id="まとめ"><a name="まとめ" class="plugin-anchor" href="#まとめ"><i class="fa fa-link" aria-hidden="true"></i></a>5. まとめ</h2>
+<p>クライアントとサーバーの通信方式を規定している HTTP について、実際に自分でリクエストを作って送ってみたり、ブラウザから送られるリクエストを観察しました。
+HTTP メッセージでどのようなデータが送られているのかがイメージできるようになっていればと思います。</p>
+<h2 id="確認課題"><a name="確認課題" class="plugin-anchor" href="#確認課題"><i class="fa fa-link" aria-hidden="true"></i></a>6. 確認課題</h2>
+<p>理解度を確かめるための問題です。</p>
+<h3 id="HTTP_メソッド"><a name="HTTP_メソッド" class="plugin-anchor" href="#HTTP_メソッド"><i class="fa fa-link" aria-hidden="true"></i></a>6.1. HTTP メソッド</h3>
+<p><code>curl http://example.com</code>で送られる HTTP リクエストのメソッドはなんでしょうか？</p>
+<h3 id="Headers"><a name="Headers" class="plugin-anchor" href="#Headers"><i class="fa fa-link" aria-hidden="true"></i></a>6.2. Headers</h3>
+<p>telnet で example.com にリクエストを送った時に、最低限必要なヘッダーはどれでしょうか？（1つかもしれませんし、複数あるかもしれません）
+HTTP リクエストをいろいろと編集して、試してみてください。</p>
+<p>このように、HTTP メッセージを手でいじることで、ブラウザの中で行われているクライアントとサーバーのやりとりの感覚をつかんでもらえればと思います。</p>
+<h3 id="検証画面"><a name="検証画面" class="plugin-anchor" href="#検証画面"><i class="fa fa-link" aria-hidden="true"></i></a>6.3. 検証画面</h3>
+<p>example.com 以外のサイトでも検証画面を開いて通信を確認してみましょう。
+たとえば Type が document のもの以外に、どのようなファイルがやりとりされていますか？
+また、GET メソッド以外のリクエストが送られているサイトはありますか？</p>
+<div id="anchors-navbar"><i class="fa fa-anchor"></i><ul><p><a href="#HTTP_による通信を触ってみる">HTTP による通信を触ってみる</a></p><li><a href="#HTTP_とは">1. HTTP とは</a></li><li><a href="#コマンドラインでウェブサイトを取得してみよう">2. コマンドラインでウェブサイトを取得してみよう</a></li><li><a href="#HTTP_をしゃべってみよう">3. HTTP をしゃべってみよう</a></li><li><a href="#ブラウザが送っているリクエストを見てみよう">4. ブラウザが送っているリクエストを見てみよう</a></li><ul><li><a href="#検証画面を開く">4.1. 検証画面を開く</a></li><li><a href="#検証画面でリクエストを見る">4.2. 検証画面でリクエストを見る</a></li></ul><li><a href="#まとめ">5. まとめ</a></li><li><a href="#確認課題">6. 確認課題</a></li><ul><li><a href="#HTTP_メソッド">6.1. HTTP メソッド</a></li><li><a href="#Headers">6.2. Headers</a></li><li><a href="#検証画面">6.3. 検証画面</a></li></ul></ul></div><a href="#HTTP_とは" id="goTop"><i class="fa fa-arrow-up"></i></a></body></html>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="environment-setting.html" class="navigation navigation-prev " aria-label="Previous page: 環境構築">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="github-pages.html" class="navigation navigation-next " aria-label="Next page: GitHub Pages でページをデプロイしてみる">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"HTTP による通信を触ってみる","level":"1.2.2","depth":2,"next":{"title":"GitHub Pages でページをデプロイしてみる","level":"1.2.3","depth":2,"path":"pre/github-pages.md","ref":"pre/github-pages.md","articles":[]},"previous":{"title":"環境構築","level":"1.2.1","depth":2,"path":"pre/environment-setting.md","ref":"pre/environment-setting.md","articles":[]},"dir":"ltr"},"config":{"plugins":["navigator","hide-published-with","anchors","hints","@honkit/honkit-plugin-ga"],"root":"./docs/","styles":{"website":"styles/custom.css"},"pluginsConfig":{"search":{},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"@honkit/honkit-plugin-ga":{},"navigator":{},"ga":{"trackingID":"","anonymizeIP":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"introduction.md","glossary":"GLOSSARY.md","summary":"_SUMMARY.md"},"variables":{},"title":"利用者視点と開発者視点から理解するウェブサイトの安全性 -セキュリティ・ミニキャンプ in 東京 2024-","gitbook":"*"},"file":{"path":"pre/http.md","mtime":"2024-04-06T15:16:01.949Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-04-06T15:16:09.054Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-published-with/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

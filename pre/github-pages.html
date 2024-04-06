@@ -1,0 +1,550 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <title>GitHub Pages でページをデプロイしてみる · 利用者視点と開発者視点から理解するウェブサイトの安全性 -セキュリティ・ミニキャンプ in 東京 2024-</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 5.1.4">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-navigator/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-hints/plugin-hints.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../aim1/" />
+    
+    
+    <link rel="prev" href="http.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    はじめに
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    事前課題
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="environment-setting.html">
+            
+                <a href="environment-setting.html">
+            
+                    
+                    環境構築
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="http.html">
+            
+                <a href="http.html">
+            
+                    
+                    HTTP による通信を触ってみる
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.3" data-path="github-pages.html">
+            
+                <a href="github-pages.html">
+            
+                    
+                    GitHub Pages でページをデプロイしてみる
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../aim1/">
+            
+                <a href="../aim1/">
+            
+                    
+                    利用者として、ウェブサイトの利用を正しく怖がろう
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../aim1/vuln-overview.html">
+            
+                <a href="../aim1/vuln-overview.html">
+            
+                    
+                    ウェブページ閲覧で生じる可能性のある危険
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../aim1/csrf-overview.html">
+            
+                <a href="../aim1/csrf-overview.html">
+            
+                    
+                    具体例としての CSRF の説明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../aim1/hands-on1.html">
+            
+                <a href="../aim1/hands-on1.html">
+            
+                    
+                    ハンズオン1
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    開発者として、ウェブサイトの開発にあたって適切な対策をしよう
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" >
+            
+                <span>
+            
+                    
+                    ブラウザという登場人物
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" >
+            
+                <span>
+            
+                    
+                    ハンズオン2
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" >
+            
+                <span>
+            
+                    
+                    フレームワークという登場人物
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" >
+            
+                <span>
+            
+                    
+                    中間総括
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" >
+            
+                <span>
+            
+                    
+                    サプライチェーンに潜む危険性
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" >
+            
+                <span>
+            
+                    
+                    ハンズオン3
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    まとめ
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../cheat-sheet.html">
+            
+                <a href="../cheat-sheet.html">
+            
+                    
+                    チートシート
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >GitHub Pages でページをデプロイしてみる</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <html><head></head><body><h1 id="GitHub_Pages_でページをデプロイしてみる"><a name="GitHub_Pages_でページをデプロイしてみる" class="plugin-anchor" href="#GitHub_Pages_でページをデプロイしてみる"><i class="fa fa-link" aria-hidden="true"></i></a>GitHub Pages でページをデプロイしてみる</h1>
+<p>nodejs + GitHub Pages を使って、ネット上に自分のサイトを公開してみます。
+これによって、現代の開発における一連のプロセスの概要を体験します。</p>
+<h2 id="GitHub_のアカウントを作る"><a name="GitHub_のアカウントを作る" class="plugin-anchor" href="#GitHub_のアカウントを作る"><i class="fa fa-link" aria-hidden="true"></i></a>1. GitHub のアカウントを作る</h2>
+<p>GitHub のアカウントを持っていない人は、<a href="https://docs.github.com/ja/get-started/start-your-journey/creating-an-account-on-github" target="_blank">GitHub でのアカウントの作成 - GitHub Docs</a>を参考にしながら、アカウントを作成してください。</p>
+<h2 id="Honkit"><a name="Honkit" class="plugin-anchor" href="#Honkit"><i class="fa fa-link" aria-hidden="true"></i></a>2. Honkit</h2>
+<p>ウェブサイトを公開するには、以下の三つが必要です。</p>
+<ul>
+<li>表示するコンテンツ（たとえば HTML）</li>
+<li>サーバー（コンテンツを置いておく場所）</li>
+<li>ドメイン（サーバーの住所）</li>
+</ul>
+<p>このうち、サーバーとドメインは GitHub が提供してくれるものを利用します。
+コンテンツについては、これから Honkit と呼ばれる Node エコシステムのライブラリを使って作成します。</p>
+<p><a href="https://honkit.netlify.app/" target="_blank">About this documentation · HonKit Documentation</a></p>
+<p>Honkit は、形の整ったきれいなサイトを簡単に作れるライブラリです。
+このドキュメントも Honkit を使って作成されています。</p>
+<p>まずは、今回作業するディレクトリを作成しましょう。
+コマンドラインか、ファイル操作ツール（Explorer や Finder）を使って、好きな場所に <code>seccamp-tokyo-a-1-honkit</code>というフォルダを作成してください。フォルダ名が異なっても構いません。</p>
+<p>その後、コマンドライン上でそのディレクトリまで移動し、以下のコマンドを打ってください。</p>
+<pre><code class="lang-sh">npm init
+git init
+</code></pre>
+<p>すると、<code>.git</code>フォルダや<code>package.json</code>などのファイルが作成されたと思います。</p>
+<p>npm は、 node で使えるパッケージの管理ツールです。npm コマンドを使って、ほしいパッケージをインストールできます。
+git は、ソースコードのバージョン管理ツールです。このドキュメントでは深い理解は必要ないので、「ソースコードを管理してくれる君」と思っておいてください。</p>
+<p>これらのコマンドは、現在のフォルダを 「npm / git で管理します」という設定を行うコマンドです。</p>
+<p>次に、<code>.gitignore</code>ファイルを作成し、以下の内容をコピペしてください。</p>
+<pre><code>node_modules/
+_book/
+</code></pre><h2 id="GitHub_にプッシュする"><a name="GitHub_にプッシュする" class="plugin-anchor" href="#GitHub_にプッシュする"><i class="fa fa-link" aria-hidden="true"></i></a>3. GitHub にプッシュする</h2>
+<h2 id="GitHub_Pages_の設定をする"><a name="GitHub_Pages_の設定をする" class="plugin-anchor" href="#GitHub_Pages_の設定をする"><i class="fa fa-link" aria-hidden="true"></i></a>4. GitHub Pages の設定をする</h2>
+<h2 id="GitHub_Actions_を整える"><a name="GitHub_Actions_を整える" class="plugin-anchor" href="#GitHub_Actions_を整える"><i class="fa fa-link" aria-hidden="true"></i></a>5. GitHub Actions を整える</h2>
+<div id="anchors-navbar"><i class="fa fa-anchor"></i><ul><p><a href="#GitHub_Pages_でページをデプロイしてみる">GitHub Pages でページをデプロイしてみる</a></p><li><a href="#GitHub_のアカウントを作る">1. GitHub のアカウントを作る</a></li><li><a href="#Honkit">2. Honkit</a></li><li><a href="#GitHub_にプッシュする">3. GitHub にプッシュする</a></li><li><a href="#GitHub_Pages_の設定をする">4. GitHub Pages の設定をする</a></li><li><a href="#GitHub_Actions_を整える">5. GitHub Actions を整える</a></li></ul></div><a href="#GitHub_のアカウントを作る" id="goTop"><i class="fa fa-arrow-up"></i></a></body></html>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="http.html" class="navigation navigation-prev " aria-label="Previous page: HTTP による通信を触ってみる">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../aim1/" class="navigation navigation-next " aria-label="Next page: 利用者として、ウェブサイトの利用を正しく怖がろう">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"GitHub Pages でページをデプロイしてみる","level":"1.2.3","depth":2,"next":{"title":"利用者として、ウェブサイトの利用を正しく怖がろう","level":"1.3","depth":1,"path":"aim1/index.md","ref":"aim1/index.md","articles":[{"title":"ウェブページ閲覧で生じる可能性のある危険","level":"1.3.1","depth":2,"path":"aim1/vuln-overview.md","ref":"aim1/vuln-overview.md","articles":[]},{"title":"具体例としての CSRF の説明","level":"1.3.2","depth":2,"path":"aim1/csrf-overview.md","ref":"aim1/csrf-overview.md","articles":[]},{"title":"ハンズオン1","level":"1.3.3","depth":2,"path":"aim1/hands-on1.md","ref":"aim1/hands-on1.md","articles":[]}]},"previous":{"title":"HTTP による通信を触ってみる","level":"1.2.2","depth":2,"path":"pre/http.md","ref":"pre/http.md","articles":[]},"dir":"ltr"},"config":{"plugins":["navigator","hide-published-with","anchors","hints","@honkit/honkit-plugin-ga"],"root":"./docs/","styles":{"website":"styles/custom.css"},"pluginsConfig":{"search":{},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"@honkit/honkit-plugin-ga":{},"navigator":{},"ga":{"trackingID":"","anonymizeIP":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"introduction.md","glossary":"GLOSSARY.md","summary":"_SUMMARY.md"},"variables":{},"title":"利用者視点と開発者視点から理解するウェブサイトの安全性 -セキュリティ・ミニキャンプ in 東京 2024-","gitbook":"*"},"file":{"path":"pre/github-pages.md","mtime":"2024-04-06T15:16:01.949Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-04-06T15:16:09.054Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-published-with/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
