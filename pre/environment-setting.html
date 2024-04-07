@@ -145,9 +145,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.3" data-path="github-pages.html">
+        <li class="chapter " data-level="1.2.3" data-path="github.html">
             
-                <a href="github-pages.html">
+                <a href="github.html">
             
                     
                     GitHub Pages でページをデプロイしてみる
@@ -160,187 +160,6 @@
     
 
             </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="1.3" data-path="../aim1/">
-            
-                <a href="../aim1/">
-            
-                    
-                    利用者として、ウェブサイトの利用を正しく怖がろう
-            
-                </a>
-            
-
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.3.1" data-path="../aim1/vuln-overview.html">
-            
-                <a href="../aim1/vuln-overview.html">
-            
-                    
-                    ウェブページ閲覧で生じる可能性のある危険
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.3.2" data-path="../aim1/csrf-overview.html">
-            
-                <a href="../aim1/csrf-overview.html">
-            
-                    
-                    具体例としての CSRF の説明
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.3.3" data-path="../aim1/hands-on1.html">
-            
-                <a href="../aim1/hands-on1.html">
-            
-                    
-                    ハンズオン1
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="1.4" >
-            
-                <span>
-            
-                    
-                    開発者として、ウェブサイトの開発にあたって適切な対策をしよう
-            
-                </span>
-            
-
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.4.1" >
-            
-                <span>
-            
-                    
-                    ブラウザという登場人物
-            
-                </span>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.4.2" >
-            
-                <span>
-            
-                    
-                    ハンズオン2
-            
-                </span>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.4.3" >
-            
-                <span>
-            
-                    
-                    フレームワークという登場人物
-            
-                </span>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.4.4" >
-            
-                <span>
-            
-                    
-                    中間総括
-            
-                </span>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.4.5" >
-            
-                <span>
-            
-                    
-                    サプライチェーンに潜む危険性
-            
-                </span>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.4.6" >
-            
-                <span>
-            
-                    
-                    ハンズオン3
-            
-                </span>
-            
-
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5" >
-            
-                <span>
-            
-                    
-                    まとめ
-            
-                </span>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.6" data-path="../cheat-sheet.html">
-            
-                <a href="../cheat-sheet.html">
-            
-                    
-                    チートシート
-            
-                </a>
-            
-
             
         </li>
     
@@ -391,7 +210,8 @@
                                 
                                 <html><head></head><body><h1 id="環境構築"><a name="環境構築" class="plugin-anchor" href="#環境構築"><i class="fa fa-link" aria-hidden="true"></i></a>環境構築</h1>
 <h2 id="telnet___curl_を使えるようにする"><a name="telnet___curl_を使えるようにする" class="plugin-anchor" href="#telnet___curl_を使えるようにする"><i class="fa fa-link" aria-hidden="true"></i></a>1. telnet / curl を使えるようにする</h2>
-<p>事前学習で telnet / curl というコマンドを使います。</p>
+<p>事前学習で telnet / curl というコマンドを使います。
+HTTP についての事前学習を行わない人は「node を使えるようにする」まで飛ばして構いませんが、Windows の人は、WSL をセットアップしておくことをおすすめします。</p>
 <h3 id="Mac___Linux"><a name="Mac___Linux" class="plugin-anchor" href="#Mac___Linux"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. Mac / Linux</h3>
 <p>ターミナルツールを開き、以下のコマンドを打ってください。</p>
 <pre><code>telnet
@@ -446,14 +266,23 @@ WSL のセットアップができ、Linux のコンソール画面に入った�
 <pre><code>volta install node
 </code></pre><p>以下のコマンドで、node のバージョンが出力されることを確認してください。</p>
 <pre><code>node -v
-</code></pre><h2 id="リポジトリの_clone"><a name="リポジトリの_clone" class="plugin-anchor" href="#リポジトリの_clone"><i class="fa fa-link" aria-hidden="true"></i></a>3. リポジトリの clone</h2>
-<p>サンプルアプリとして、nodejs を用いたものを用意しました。
+</code></pre><h2 id="VSCode_のダウンロード"><a name="VSCode_のダウンロード" class="plugin-anchor" href="#VSCode_のダウンロード"><i class="fa fa-link" aria-hidden="true"></i></a>3. VSCode のダウンロード</h2>
+<p>ソースファイルを編集するのに、VSCode というエディタを利用します。既に使用しているエディタがある人は、それで構いません。</p>
+<p>以下のページからダウンロードして、セットアップを行ってください。
+<a href="https://code.visualstudio.com/download" target="_blank">https://code.visualstudio.com/download</a></p>
+<p>VSCode ではソースコードを編集したり、ターミナルを利用できたりします。各自で使い方は調べておいてください。</p>
+<h2 id="リポジトリの_clone"><a name="リポジトリの_clone" class="plugin-anchor" href="#リポジトリの_clone"><i class="fa fa-link" aria-hidden="true"></i></a>4. リポジトリの clone</h2>
+<p>当日に用いるサンプルアプリとして、nodejs を用いたものを用意しました。
 nodejs を使用したことがあれば理解度が上がるとは思いますが、必要な箇所にコメントをつけるので、使用経験がなくても CSRF を理解する妨げにはならないと思います。</p>
-<p>以下のリポジトリを clone してください
-<a href="https://github.com/sasakiy84/csrf-demo" target="_blank">https://github.com/sasakiy84/csrf-demo</a></p>
-<p>その後、readme に従ってアプリを起動してください。nodejs か docker-compose の実行環境が必要です。
+<p>以下のコマンドを実行して、リポジトリを clone してください。Mac / Ubuntu(WSL) ならば、デフォルトで git コマンドがインストールされているはずです。</p>
+<pre><code class="lang-sh">git <span class="hljs-built_in">clone</span> https://github.com/sasakiy84/csrf-demo
+</code></pre>
+<p>その後、clone したディレクトリに移動し、 readme に従ってアプリを起動してください。nodejs か docker-compose の実行環境が必要です。
 本を読み進めていくと、localhost へのリンクが出てくると思います。これは、サンプルアプリへのリンクを示しています。ポート 3000 番のリンクが本物のアプリで、ポート 4000 番のリンクが攻撃者が作成したアプリのものだと思ってください。</p>
-<div id="anchors-navbar"><i class="fa fa-anchor"></i><ul><p><a href="#環境構築">環境構築</a></p><li><a href="#telnet___curl_を使えるようにする">1. telnet / curl を使えるようにする</a></li><ul><li><a href="#Mac___Linux">1.1. Mac / Linux</a></li><li><a href="#Windows">1.2. Windows</a></li></ul><li><a href="#node_を使えるようにする">2. node を使えるようにする</a></li><ul><li><a href="#Mac___Linux">2.1. Mac / Linux</a></li><li><a href="#Windows">2.2. Windows</a></li></ul><li><a href="#リポジトリの_clone">3. リポジトリの clone</a></li></ul></div><a href="#telnet___curl_を使えるようにする" id="goTop"><i class="fa fa-arrow-up"></i></a></body></html>
+<p>起動した際に、特にエラーログなどが出ず、ターミナルに以下のようなログが表示されれば問題ないです。<code>Ctrl + C</code> を押してアプリを閉じてください。</p>
+<pre><code>app listening on port: 4000
+app listening on port: 3000
+</code></pre><div id="anchors-navbar"><i class="fa fa-anchor"></i><ul><p><a href="#環境構築">環境構築</a></p><li><a href="#telnet___curl_を使えるようにする">1. telnet / curl を使えるようにする</a></li><ul><li><a href="#Mac___Linux">1.1. Mac / Linux</a></li><li><a href="#Windows">1.2. Windows</a></li></ul><li><a href="#node_を使えるようにする">2. node を使えるようにする</a></li><ul><li><a href="#Mac___Linux">2.1. Mac / Linux</a></li><li><a href="#Windows">2.2. Windows</a></li></ul><li><a href="#VSCode_のダウンロード">3. VSCode のダウンロード</a></li><li><a href="#リポジトリの_clone">4. リポジトリの clone</a></li></ul></div><a href="#telnet___curl_を使えるようにする" id="goTop"><i class="fa fa-arrow-up"></i></a></body></html>
                                 
                                 </section>
                             
@@ -496,7 +325,7 @@ nodejs を使用したことがあれば理解度が上がるとは思います�
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"環境構築","level":"1.2.1","depth":2,"next":{"title":"HTTP による通信を触ってみる","level":"1.2.2","depth":2,"path":"pre/http.md","ref":"pre/http.md","articles":[]},"previous":{"title":"事前課題","level":"1.2","depth":1,"path":"pre/index.md","ref":"pre/index.md","articles":[{"title":"環境構築","level":"1.2.1","depth":2,"path":"pre/environment-setting.md","ref":"pre/environment-setting.md","articles":[]},{"title":"HTTP による通信を触ってみる","level":"1.2.2","depth":2,"path":"pre/http.md","ref":"pre/http.md","articles":[]},{"title":"GitHub Pages でページをデプロイしてみる","level":"1.2.3","depth":2,"path":"pre/github-pages.md","ref":"pre/github-pages.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["navigator","hide-published-with","anchors","hints","@honkit/honkit-plugin-ga"],"root":"./docs/","styles":{"website":"styles/custom.css"},"pluginsConfig":{"search":{},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"@honkit/honkit-plugin-ga":{},"navigator":{},"ga":{"trackingID":"","anonymizeIP":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"introduction.md","glossary":"GLOSSARY.md","summary":"_SUMMARY.md"},"variables":{},"title":"利用者視点と開発者視点から理解するウェブサイトの安全性 -セキュリティ・ミニキャンプ in 東京 2024-","gitbook":"*"},"file":{"path":"pre/environment-setting.md","mtime":"2024-04-06T16:11:32.431Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-04-06T16:11:39.685Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"環境構築","level":"1.2.1","depth":2,"next":{"title":"HTTP による通信を触ってみる","level":"1.2.2","depth":2,"path":"pre/http.md","ref":"pre/http.md","articles":[]},"previous":{"title":"事前課題","level":"1.2","depth":1,"path":"pre/index.md","ref":"pre/index.md","articles":[{"title":"環境構築","level":"1.2.1","depth":2,"path":"pre/environment-setting.md","ref":"pre/environment-setting.md","articles":[]},{"title":"HTTP による通信を触ってみる","level":"1.2.2","depth":2,"path":"pre/http.md","ref":"pre/http.md","articles":[]},{"title":"GitHub Pages でページをデプロイしてみる","level":"1.2.3","depth":2,"path":"pre/github.md","ref":"pre/github.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["navigator","hide-published-with","anchors","hints","@honkit/honkit-plugin-ga"],"root":"./docs/","styles":{"website":"styles/custom.css"},"pluginsConfig":{"search":{},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"@honkit/honkit-plugin-ga":{},"navigator":{},"ga":{"trackingID":"","anonymizeIP":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"introduction.md","glossary":"GLOSSARY.md","summary":"_SUMMARY.md"},"variables":{},"title":"利用者視点と開発者視点から理解するウェブサイトの安全性 -セキュリティ・ミニキャンプ in 東京 2024-","gitbook":"*"},"file":{"path":"pre/environment-setting.md","mtime":"2024-04-07T09:05:09.127Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-04-07T09:05:13.561Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

@@ -60,8 +60,6 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../aim1/" />
-    
     
     <link rel="prev" href="http.html" />
     
@@ -145,9 +143,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2.3" data-path="github-pages.html">
+        <li class="chapter active" data-level="1.2.3" data-path="github.html">
             
-                <a href="github-pages.html">
+                <a href="github.html">
             
                     
                     GitHub Pages でページをデプロイしてみる
@@ -160,187 +158,6 @@
     
 
             </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="1.3" data-path="../aim1/">
-            
-                <a href="../aim1/">
-            
-                    
-                    利用者として、ウェブサイトの利用を正しく怖がろう
-            
-                </a>
-            
-
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.3.1" data-path="../aim1/vuln-overview.html">
-            
-                <a href="../aim1/vuln-overview.html">
-            
-                    
-                    ウェブページ閲覧で生じる可能性のある危険
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.3.2" data-path="../aim1/csrf-overview.html">
-            
-                <a href="../aim1/csrf-overview.html">
-            
-                    
-                    具体例としての CSRF の説明
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.3.3" data-path="../aim1/hands-on1.html">
-            
-                <a href="../aim1/hands-on1.html">
-            
-                    
-                    ハンズオン1
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="1.4" >
-            
-                <span>
-            
-                    
-                    開発者として、ウェブサイトの開発にあたって適切な対策をしよう
-            
-                </span>
-            
-
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.4.1" >
-            
-                <span>
-            
-                    
-                    ブラウザという登場人物
-            
-                </span>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.4.2" >
-            
-                <span>
-            
-                    
-                    ハンズオン2
-            
-                </span>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.4.3" >
-            
-                <span>
-            
-                    
-                    フレームワークという登場人物
-            
-                </span>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.4.4" >
-            
-                <span>
-            
-                    
-                    中間総括
-            
-                </span>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.4.5" >
-            
-                <span>
-            
-                    
-                    サプライチェーンに潜む危険性
-            
-                </span>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.4.6" >
-            
-                <span>
-            
-                    
-                    ハンズオン3
-            
-                </span>
-            
-
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5" >
-            
-                <span>
-            
-                    
-                    まとめ
-            
-                </span>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.6" data-path="../cheat-sheet.html">
-            
-                <a href="../cheat-sheet.html">
-            
-                    
-                    チートシート
-            
-                </a>
-            
-
             
         </li>
     
@@ -389,9 +206,10 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <html><head></head><body><h1 id="GitHub_Pages_でページをデプロイしてみる"><a name="GitHub_Pages_でページをデプロイしてみる" class="plugin-anchor" href="#GitHub_Pages_でページをデプロイしてみる"><i class="fa fa-link" aria-hidden="true"></i></a>GitHub Pages でページをデプロイしてみる</h1>
-<p>nodejs + GitHub Pages を使って、ネット上に自分のサイトを公開してみます。
-これによって、現代の開発における一連のプロセスの概要を体験します。</p>
+                                <html><head></head><body><h1 id="GitHub_Actions_を使う準備をする"><a name="GitHub_Actions_を使う準備をする" class="plugin-anchor" href="#GitHub_Actions_を使う準備をする"><i class="fa fa-link" aria-hidden="true"></i></a>GitHub Actions を使う準備をする</h1>
+<p>この節では、講義当日に GitHub Actions を使う準備をします。
+具体的には、GitHub のリポジトリにコードをアップロードします。</p>
+<p>アップロードするコードは、HTML が生成できるものであればなんでもいいです。しかし、せっかくなので Honkit というライブラリを使います。Honkit のような HTML 生成ライブラリを利用してみることで、自分でウェブサイトをホスティングするときにやりやすくなるはずです。</p>
 <h2 id="GitHub_のアカウントを作る"><a name="GitHub_のアカウントを作る" class="plugin-anchor" href="#GitHub_のアカウントを作る"><i class="fa fa-link" aria-hidden="true"></i></a>1. GitHub のアカウントを作る</h2>
 <p>GitHub のアカウントを持っていない人は、<a href="https://docs.github.com/ja/get-started/start-your-journey/creating-an-account-on-github" target="_blank">GitHub でのアカウントの作成 - GitHub Docs</a>を参考にしながら、アカウントを作成してください。</p>
 <h2 id="Honkit"><a name="Honkit" class="plugin-anchor" href="#Honkit"><i class="fa fa-link" aria-hidden="true"></i></a>2. Honkit</h2>
@@ -409,20 +227,67 @@
 <p>まずは、今回作業するディレクトリを作成しましょう。
 コマンドラインか、ファイル操作ツール（Explorer や Finder）を使って、好きな場所に <code>seccamp-tokyo-a-1-honkit</code>というフォルダを作成してください。フォルダ名が異なっても構いません。</p>
 <p>その後、コマンドライン上でそのディレクトリまで移動し、以下のコマンドを打ってください。</p>
-<pre><code class="lang-sh">npm init
+<pre><code class="lang-sh">npm init -y
+npm install honkit
 git init
+npx honkit init
 </code></pre>
-<p>すると、<code>.git</code>フォルダや<code>package.json</code>などのファイルが作成されたと思います。</p>
+<p>すると、<code>.git</code>フォルダや<code>package.json</code>、<code>README.md</code>や<code>_SUMMARY.md</code>などのファイルが作成されたと思います。</p>
 <p>npm は、 node で使えるパッケージの管理ツールです。npm コマンドを使って、ほしいパッケージをインストールできます。
-git は、ソースコードのバージョン管理ツールです。このドキュメントでは深い理解は必要ないので、「ソースコードを管理してくれる君」と思っておいてください。</p>
+git は、ソースコードのバージョン管理ツールです。このドキュメントでは深い理解は必要ないので、「ソースコードを管理してくれる君」と思っておいてください。
+npx は、node のエコシステムにあるライブラリを使用するためのコマンドで、今回は Honkit のライブラリを使ってディレクトリを初期化しています。これにより、Honkit のためのファイルが作成されます。</p>
 <p>これらのコマンドは、現在のフォルダを 「npm / git で管理します」という設定を行うコマンドです。</p>
 <p>次に、<code>.gitignore</code>ファイルを作成し、以下の内容をコピペしてください。</p>
 <pre><code>node_modules/
 _book/
-</code></pre><h2 id="GitHub_にプッシュする"><a name="GitHub_にプッシュする" class="plugin-anchor" href="#GitHub_にプッシュする"><i class="fa fa-link" aria-hidden="true"></i></a>3. GitHub にプッシュする</h2>
-<h2 id="GitHub_Pages_の設定をする"><a name="GitHub_Pages_の設定をする" class="plugin-anchor" href="#GitHub_Pages_の設定をする"><i class="fa fa-link" aria-hidden="true"></i></a>4. GitHub Pages の設定をする</h2>
-<h2 id="GitHub_Actions_を整える"><a name="GitHub_Actions_を整える" class="plugin-anchor" href="#GitHub_Actions_を整える"><i class="fa fa-link" aria-hidden="true"></i></a>5. GitHub Actions を整える</h2>
-<div id="anchors-navbar"><i class="fa fa-anchor"></i><ul><p><a href="#GitHub_Pages_でページをデプロイしてみる">GitHub Pages でページをデプロイしてみる</a></p><li><a href="#GitHub_のアカウントを作る">1. GitHub のアカウントを作る</a></li><li><a href="#Honkit">2. Honkit</a></li><li><a href="#GitHub_にプッシュする">3. GitHub にプッシュする</a></li><li><a href="#GitHub_Pages_の設定をする">4. GitHub Pages の設定をする</a></li><li><a href="#GitHub_Actions_を整える">5. GitHub Actions を整える</a></li></ul></div><a href="#GitHub_のアカウントを作る" id="goTop"><i class="fa fa-arrow-up"></i></a></body></html>
+</code></pre><p>最後に、以下のコマンドを打って、Honkit を起動してみましょう。</p>
+<pre><code class="lang-sh">npx honkit serve
+</code></pre>
+<p>すると、以下のリンクで Honkit のページが見れるようになったと思います。
+<code>README.md</code>を編集するとブラウザでもコンテンツが変わるはずです。</p>
+<h2 id="GitHub_にプッシュする"><a name="GitHub_にプッシュする" class="plugin-anchor" href="#GitHub_にプッシュする"><i class="fa fa-link" aria-hidden="true"></i></a>3. GitHub にプッシュする</h2>
+<p>これまでにできたものを GitHub にアップロードしましょう。</p>
+<p>大まかに以下のような手順で進めます。</p>
+<ol>
+<li>自分の端末から GitHub に通信ができるようにする</li>
+<li>GitHub に空のリポジトリを作成する</li>
+<li>現在のコードを 2 で作った空のリポジトリにアップロードする</li>
+</ol>
+<h3 id="自分の端末から_GitHub_に通信ができるようにする"><a name="自分の端末から_GitHub_に通信ができるようにする" class="plugin-anchor" href="#自分の端末から_GitHub_に通信ができるようにする"><i class="fa fa-link" aria-hidden="true"></i></a>3.1. 自分の端末から GitHub に通信ができるようにする</h3>
+<p>まずは、GitHub にコマンドラインからアクセスできるようにしましょう。
+以下の公式ページを参考に、GitHub の認証情報を登録してください。
+<a href="https://docs.github.com/ja/get-started/getting-started-with-git/set-up-git#git-%E3%81%8B%E3%82%89-github-%E3%81%A7%E8%AA%8D%E8%A8%BC%E3%81%99%E3%82%8B" target="_blank">https://docs.github.com/ja/get-started/getting-started-with-git/set-up-git#git-%E3%81%8B%E3%82%89-github-%E3%81%A7%E8%AA%8D%E8%A8%BC%E3%81%99%E3%82%8B</a></p>
+<p>HTTPS と SSH の二つの接続方法がありますが、どちらでも構いません。
+<a href="https://docs.github.com/ja/get-started/getting-started-with-git/caching-your-github-credentials-in-git#github-cli" target="_blank">HTTPS による認証を GitHub CLI を用いて行う</a>のが楽だと思います。</p>
+<h3 id="GitHub_に空のリポジトリを作成する"><a name="GitHub_に空のリポジトリを作成する" class="plugin-anchor" href="#GitHub_に空のリポジトリを作成する"><i class="fa fa-link" aria-hidden="true"></i></a>3.2. GitHub に空のリポジトリを作成する</h3>
+<p>GitHub のサイトに行って、ログインしてください。
+左上にある、New のボタンを押すと、新しいリポジトリが作成できます。
+<img src="img/github-pages/image.png" alt="alt text"></p>
+<p>Owner が自分であることを確認し、リポジトリの名前を<code>seccamp2024-tokyo-a-1</code>などとしてください。リポジトリの名前は好きなもので大丈夫です。
+外部に公開したくない人は Private を選んでください。</p>
+<p>その他の場所には触らずに、<code>Create Repository</code>ボタンを押しましょう。すると、空のリポジトリが作成されます。</p>
+<h3 id="現在のコードを_2_で作った空のリポジトリにアップロードする"><a name="現在のコードを_2_で作った空のリポジトリにアップロードする" class="plugin-anchor" href="#現在のコードを_2_で作った空のリポジトリにアップロードする"><i class="fa fa-link" aria-hidden="true"></i></a>3.3. 現在のコードを 2 で作った空のリポジトリにアップロードする</h3>
+<p>空のリポジトリができたら、そこにコードをアップロードします。
+Honkit の作業をしたフォルダ内で、以下のコマンドを順番に打ってください。</p>
+<pre><code class="lang-sh">git add .
+git commit -m <span class="hljs-string">&quot;first commit&quot;</span>
+</code></pre>
+<p>つぎに、以下のコマンドの REPOSITORY_LINK を GitHub の画面上のものに置き換えて実行してください。</p>
+<p><img src="img/github-pages/image-1.png" alt="alt text"></p>
+<p>ただし、「自分の端末から GitHub に通信ができるようにする」で SSH 認証を選んだ人は SSH を選んだ時にでてくる文字列を、HTTPS 認証を選んだ人は、 HTTPS を選んだときに出てくる文字列で置き換えてください。</p>
+<pre><code class="lang-sh">git remote add origin REPOSITORY_LINK
+</code></pre>
+<p>SSH 認証の人は<code>git remote add origin git@github.com:sasakiy84/test-test-test.git</code>、HTTPS 認証の人は<code>git remote add origin https://github.com/sasakiy84/test-test-test.git</code>のようになると思います。</p>
+<p>最後に以下のコマンドを打って、コードをアップロードしましょう。このコマンドを実行した後に、空のリポジトリをリロードすると、コードがアップロードされているはずです。</p>
+<pre><code class="lang-sh">git push -u origin master
+</code></pre>
+<p>もし、「username と email を設定してください」という旨のエラーが出たら、以下のコマンドで設定しましょう。</p>
+<pre><code class="lang-sh">git config --global user.name <span class="hljs-string">&quot;あなたの名前&quot;</span>
+git config --global user.email <span class="hljs-string">&quot;あなたのメールアドレス&quot;</span>
+</code></pre>
+<p>以下のリポジトリのようになっていれば OK です。</p>
+<p><a href="https://github.com/sasakiy84/seccamp-2024-tokyo-honkit" target="_blank">https://github.com/sasakiy84/seccamp-2024-tokyo-honkit</a></p>
+<div id="anchors-navbar"><i class="fa fa-anchor"></i><ul><p><a href="#GitHub_Actions_を使う準備をする">GitHub Actions を使う準備をする</a></p><li><a href="#GitHub_のアカウントを作る">1. GitHub のアカウントを作る</a></li><li><a href="#Honkit">2. Honkit</a></li><li><a href="#GitHub_にプッシュする">3. GitHub にプッシュする</a></li><ul><li><a href="#自分の端末から_GitHub_に通信ができるようにする">3.1. 自分の端末から GitHub に通信ができるようにする</a></li><li><a href="#GitHub_に空のリポジトリを作成する">3.2. GitHub に空のリポジトリを作成する</a></li><li><a href="#現在のコードを_2_で作った空のリポジトリにアップロードする">3.3. 現在のコードを 2 で作った空のリポジトリにアップロードする</a></li></ul></ul></div><a href="#GitHub_のアカウントを作る" id="goTop"><i class="fa fa-arrow-up"></i></a></body></html>
                                 
                                 </section>
                             
@@ -449,14 +314,10 @@ _book/
 
             
                 
-                <a href="http.html" class="navigation navigation-prev " aria-label="Previous page: HTTP による通信を触ってみる">
+                <a href="http.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: HTTP による通信を触ってみる">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="../aim1/" class="navigation navigation-next " aria-label="Next page: 利用者として、ウェブサイトの利用を正しく怖がろう">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -465,7 +326,7 @@ _book/
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"GitHub Pages でページをデプロイしてみる","level":"1.2.3","depth":2,"next":{"title":"利用者として、ウェブサイトの利用を正しく怖がろう","level":"1.3","depth":1,"path":"aim1/index.md","ref":"aim1/index.md","articles":[{"title":"ウェブページ閲覧で生じる可能性のある危険","level":"1.3.1","depth":2,"path":"aim1/vuln-overview.md","ref":"aim1/vuln-overview.md","articles":[]},{"title":"具体例としての CSRF の説明","level":"1.3.2","depth":2,"path":"aim1/csrf-overview.md","ref":"aim1/csrf-overview.md","articles":[]},{"title":"ハンズオン1","level":"1.3.3","depth":2,"path":"aim1/hands-on1.md","ref":"aim1/hands-on1.md","articles":[]}]},"previous":{"title":"HTTP による通信を触ってみる","level":"1.2.2","depth":2,"path":"pre/http.md","ref":"pre/http.md","articles":[]},"dir":"ltr"},"config":{"plugins":["navigator","hide-published-with","anchors","hints","@honkit/honkit-plugin-ga"],"root":"./docs/","styles":{"website":"styles/custom.css"},"pluginsConfig":{"search":{},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"@honkit/honkit-plugin-ga":{},"navigator":{},"ga":{"trackingID":"","anonymizeIP":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"introduction.md","glossary":"GLOSSARY.md","summary":"_SUMMARY.md"},"variables":{},"title":"利用者視点と開発者視点から理解するウェブサイトの安全性 -セキュリティ・ミニキャンプ in 東京 2024-","gitbook":"*"},"file":{"path":"pre/github-pages.md","mtime":"2024-04-06T16:11:32.431Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-04-06T16:11:39.685Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"GitHub Pages でページをデプロイしてみる","level":"1.2.3","depth":2,"previous":{"title":"HTTP による通信を触ってみる","level":"1.2.2","depth":2,"path":"pre/http.md","ref":"pre/http.md","articles":[]},"dir":"ltr"},"config":{"plugins":["navigator","hide-published-with","anchors","hints","@honkit/honkit-plugin-ga"],"root":"./docs/","styles":{"website":"styles/custom.css"},"pluginsConfig":{"search":{},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"@honkit/honkit-plugin-ga":{},"navigator":{},"ga":{"trackingID":"","anonymizeIP":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"introduction.md","glossary":"GLOSSARY.md","summary":"_SUMMARY.md"},"variables":{},"title":"利用者視点と開発者視点から理解するウェブサイトの安全性 -セキュリティ・ミニキャンプ in 東京 2024-","gitbook":"*"},"file":{"path":"pre/github.md","mtime":"2024-04-07T09:05:09.127Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-04-07T09:05:13.561Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
