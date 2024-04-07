@@ -2,17 +2,5 @@
 - [事前課題](pre/index.md)
   - [環境構築](pre/environment-setting.md)
   - [HTTP による通信を触ってみる](pre/http.md)
-  - [GitHub Pages でページをデプロイしてみる](pre/github-pages.md)
-- [利用者として、ウェブサイトの利用を正しく怖がろう](aim1/index.md)
-  - [ウェブページ閲覧で生じる可能性のある危険](aim1/vuln-overview.md)
-  - [具体例としての CSRF の説明](aim1/csrf-overview.md)
-  - [ハンズオン1](aim1/hands-on1.md)
-- 開発者として、ウェブサイトの開発にあたって適切な対策をしよう
-  - ブラウザという登場人物
-  - ハンズオン2
-  - フレームワークという登場人物
-  - 中間総括
-  - サプライチェーンに潜む危険性
-  - ハンズオン3
-- まとめ
-- [チートシート](cheat-sheet.md)
+  - [GitHub Pages でページをデプロイしてみる](pre/github.md)
+
