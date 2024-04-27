@@ -155,14 +155,12 @@ https://developer.mozilla.org/ja/docs/Web/Security/Same-origin_policy#%E7%95%B0%
 > However, user agent implementors often balance these risks against the benefits of allowing the cross-origin interaction. For example, an HTML user agent that blocked cross-origin network requests would prevent its users from following hyperlinks, a core feature of the web.
 > https://www.rfc-editor.org/rfc/rfc6454#section-3.4.3
 
-GET リクエストは禁止せず、POST リクエストだけを禁止にするという選択肢もあったと思いますが、おそらく後方互換性の観点から諦めたのではないでしょうか。同一オリジンポリシーが策定された当時には、多くのクロスオリジンで POST をするウェブサイトがあり、それをデフォルトで禁止にしてしまうと影響が大きかったのだと推測します。
-
 ### 同一オリジンポリシーをもっと詳しく
 
 ここで紹介したのは、あくまで CSRF から見た同一オリジンポリシーの世界です。同一オリジンポリシーの他の側面について学びたい人は、以下の資料をおすすめします。
 
 同一オリジンポリシー - ウェブセキュリティ | MDN
-https://developer.mozilla.org/ja/docs/Web/Security/Same-origin_policy
+https://developer.  mozilla.org/ja/docs/Web/Security/Same-origin_policy
 
 『Web ブラウザセキュリティ ― Web アプリケーションの安全性を支える仕組みを整理する』米内貴志 著
 https://www.lambdanote.com/collections/wbs

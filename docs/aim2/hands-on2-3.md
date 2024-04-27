@@ -49,15 +49,23 @@ samesite-strict が undefined になったと思います。クロスサイト�
 
 最後に、POST を試してみましょう。以下のボタンをクリックすると、http://localhost:3000/5-check-cookies に POST リクエストが送られます。
 
+<div>
 <form id="form" action="http://localhost:3000/5-check-cookies" method="post">
   <button type="submit">submit</buttion>
 </form>
+</div>
 
 samesite-none のみが取得されていると思います。
 
 ## 制約
 
 当然ですが、cookie を使った認証処理をしているサイトでしか使えません。
+
+## Origin Header の確認
+ブラウザの機能として、Origin Header というものがあります。
+
+以下のリンク先のページの Submit を実行すると、サーバー側にログが流れると思います。
+http://localhost:3000/4-prepare-custom-header
 
 ## 今までの防御手法の確認
 Chrome では　バージョン 80 以降で cookie の samesite 属性をデフォルトで `lax` にしています。
